@@ -6,13 +6,19 @@ RUN set -x && \
     python-dev \
     py-pip \
     build-base \
-    postgresql-dev && \
+    postgresql-dev
+
+RUN set -x && \
+    apk add nodejs-current \
+    yarn \
+    nodejs-npm \
+    libmemcached && \
     rm /var/cache/apk/*
 
 
 WORKDIR /usr/src/app
 COPY requirements*.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
-#COPY . .
+
 
 CMD [ "python"]
