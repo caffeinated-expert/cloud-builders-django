@@ -15,6 +15,7 @@ RUN set -x && \
     libmemcached && \
     rm /var/cache/apk/*
 
+RUN mkdir -p /workspace
 
 WORKDIR /usr/src/app
 COPY requirements*.txt ./
