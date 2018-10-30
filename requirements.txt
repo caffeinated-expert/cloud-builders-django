@@ -42,5 +42,4 @@ google-endpoints
 google-cloud-container
 google-cloud-dlp
 google-cloud-kms
-google-python-cloud-debugger
 django-cloud-tasks
