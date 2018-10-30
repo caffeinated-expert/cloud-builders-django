@@ -22,9 +22,7 @@ google-cloud-happybase
 google-cloud-language
 google-cloud-pubsub
 google-cloud-redis
-google-cloud-texttospeech
 google-cloud-videointelligence
-google-cloud-dataflow
 google-cloud-publisher
 google-cloud-websecurityscanner
 google-cloud-natural-language
