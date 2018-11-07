@@ -8,13 +8,6 @@ RUN set -x && \
     build-base \
     postgresql-dev
 
-RUN set -x && \
-    apk add nodejs-current \
-    yarn \
-    nodejs-npm \
-    libmemcached && \
-    rm /var/cache/apk/*
-
 RUN mkdir -p /workspace
 
 WORKDIR /usr/src/app
